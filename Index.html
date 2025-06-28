@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gabung Komun Zephyra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font epik -->
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Uncial Antiqua', cursive;
+      overflow: hidden;
+    }
+
+    body {
+      background: url('https://img1.pixhost.to/images/6818/616118310_image.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    /* Overlay gelap agar teks terlihat */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #f3f3f3;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      text-shadow: 0 0 20px #00ffe5;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-family: 'Rajdhani', sans-serif;
+      max-width: 650px;
+      margin-bottom: 40px;
+      color: #dcdcdc;
+      text-shadow: 0 0 10px #000;
+    }
+
+    .join-button {
+      padding: 14px 32px;
+      font-size: 1.2em;
+      font-family: 'Rajdhani', sans-serif;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background: linear-gradient(45deg, #00ffe5, #007bff);
+      color: #000;
+      box-shadow: 0 0 20px #00ffe5, 0 0 40px #007bff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .join-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #a8ffff, 0 0 50px #00f0ff;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 15px;
+      color: #ccc;
+      font-size: 0.9em;
+      font-family: 'Rajdhani', sans-serif;
+      z-index: 2;
+      text-shadow: 0 0 5px #000;
+    }
+
+    /* Efek kabut bawah */
+    .fog {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(to top, rgba(255,255,255,0.1), rgba(255,255,255,0));
+      z-index: 1;
+      pointer-events: none;
+      animation: fogMove 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes fogMove {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5em; }
+      p { font-size: 1em; }
+      .join-button { font-size: 1em; padding: 12px 24px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>komun Zephyra</h1>
+    <p>🌌 Raih pencerahan, pecahkan batas fana, dan langkahi jalan abadi bersama para kultivator dari langit ke sembilan.</p>
+    <button class="join-button" onclick="masuk()">⚡ Gabung Sekarang</button>
+  </div>
+
+  <div class="fog"></div>
+
+  <div class="footer">© Kaizu Ganteng banget.</div>
+
+  <script>
+    function masuk() {
+      window.location.href = "https://chat.whatsapp.com/HRLX5yDMgjD4JRnSvDzqAn?mode=ac_t";
+    }
+  </script>
+
+</body>
+</html>
